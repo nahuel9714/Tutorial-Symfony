@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<a href="{{ asset('css1.css') }}">{{ asset('css1.css') }}</a><br>
+<a href="{{ absolute_url(asset('css1.css')) }}">{{ absolute_url(asset('css1.css')) }}</a><br>
+Asset version: {{ asset_version('css1.css') }}
+
+{% endblock %}
